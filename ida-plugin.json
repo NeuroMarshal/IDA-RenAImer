@@ -1,0 +1,7 @@
+{
+  "IDAMetadataDescriptorVersion": 1,
+  "plugin": {
+    "name": "ai_assistant",
+    "entryPoint": "ai_assistant.py"
+  }
+}

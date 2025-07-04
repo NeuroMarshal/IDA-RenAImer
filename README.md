@@ -1,5 +1,6 @@
-# IDA-RenAImer
-IDA-RenAImer is an AI assistant plugin for IDA that sends decompiled pseudocode to a local Ollama server to suggest and apply meaningful renames and comments within the Hex-Rays interface.
+# AI Assistant for IDA Pro
+
+AI Assistant simplifies routine reverse engineering tasks. The plugin sends the decompiled code of a function from IDA Pro to a local Ollama server and returns suggestions for renaming and comments. This makes it easy to assign meaningful names to variables, functions, and structures while you work.
 
 ## Purpose and interaction with Ollama
 
@@ -39,3 +40,4 @@ The plugin connects the Hex‑Rays decompiler to local Ollama language models. F
 - **Cannot connect to Ollama.** Check the `ollama_url` in the ini file and ensure the server is running.
 - **Python dependencies not found.** Verify that `requests`, `pydantic`, and `PyQt5` are available to IDA.
 - **Menu item does not appear.** Make sure the plugin files are in the correct directory and restart IDA.
+
