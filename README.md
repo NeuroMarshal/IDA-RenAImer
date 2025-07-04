@@ -41,3 +41,4 @@ The plugin connects the Hex‑Rays decompiler to local Ollama language models. F
 - **Python dependencies not found.** Verify that `requests`, `pydantic`, and `PyQt5` are available to IDA.
 - **Menu item does not appear.** Make sure the plugin files are in the correct directory and restart IDA.
 
+This plugin is not affiliated with or endorsed by Hex-Rays SA
