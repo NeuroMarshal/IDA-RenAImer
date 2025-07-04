@@ -232,7 +232,7 @@ class StructureRename(BaseModel):
 class CodeAnalysis(BaseModel):
     # entrypoint: str = Field(description="A new descriptive name for the function being analyzed in snake_case format")
     entrypoint: EntryPointRename = Field(description="Renaming the function being analyzed (entry point) itself")
-    comment: str = Field(description="Brief function description in Russian (2-4 sentences)")
+    comment: str = Field(description="Brief function description (2-4 sentences)")
     variables: List[VariableRename] = Field(description="All variables and parameters to rename (a1, a2, v1, v2, etc.)")
     functions: List[FunctionRename] = Field(description="All called functions to rename")
     structures: List[StructureRename] = Field(description="All structures to rename")
@@ -247,10 +247,10 @@ class CodeAnalysis(BaseModel):
         )
 
 class CodeAnalysisWithThinking(BaseModel):
-    thinking: str = Field(description="Detailed step-by-step analysis in Russian about what the function does")
-    reasoning: str = Field(description="Logical reasoning and justification for naming choices in Russian")
+    thinking: str = Field(description="Detailed step-by-step analysis about what the function does")
+    reasoning: str = Field(description="Logical reasoning and justification for naming choices")
     entrypoint: EntryPointRename = Field(description="Renaming the function being analyzed (entry point) itself")
-    comment: str = Field(description="Brief function description in Russian (1-3 sentences)")
+    comment: str = Field(description="Brief function description (2-4 sentences)")
     variables: List[VariableRename] = Field(description="All variables and parameters to rename (a1, a2, v1, v2, etc.)")
     functions: List[FunctionRename] = Field(description="All called functions to rename")
     structures: List[StructureRename] = Field(description="All structures to rename")
